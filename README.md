@@ -1,1 +1,2 @@
-# blog-with-feature-image
+# Generic Blog with Feature Image
+
