@@ -1,6 +1,7 @@
   /***
 *     @author Victor Chimenti, MSCS-SE '20
-*     @file article-content-type.js
+*     @file v9-organizer-blogwithimage.js
+*     v9/organizer/blogwithimage
 *
 *     This new blog content type is derived from the Career Engagement Blog.
 *
