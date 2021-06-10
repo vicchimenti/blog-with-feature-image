@@ -18,11 +18,10 @@ try {
     var name = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='normal' modifiers='striptags,htmlentities' />");
     var articleTitle = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Article Title' output='normal' display_field='value' />");
     var publishDate = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Publish Date' output='normal' display_field='value' />");
-    var author = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Author' output='normal' display_field='value' />");
     var articleImage = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Image' output='normal' formatter='path/*' />");
     var articleSummary = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Summary' output='normal' display_field='value' />");
     var articleFullBody = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Article Body' output='normal' display_field='value' />");
-    var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name' modifiers='striptags,htmlentities' />");
+    var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Article Title' modifiers='striptags,htmlentities' />");
     var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
     var lastModified = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='last_modified' format='MM/dd/yyyy' />");
     
@@ -31,7 +30,7 @@ try {
   
   
     /* -- Prepare all the things -- */
-    var beginningHTML = '<div class="knowledgeBaseItemWrapper" aria-label="' + articleTitle + '" id="id' + contentID + '"><div class="knowledgeBaseItem standardContent">';
+    var beginningHTML = '<div class="knowledgeBaseItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="knowledgeBaseItem standardContent">';
     var endingHTML = '</div></div>';
     var titleLink = "";
     var lastModifiedString = '<div class="lastModified" style="display:inline-block">Last modified: ' + lastModified + '</div>';
@@ -40,9 +39,9 @@ try {
   
     /* determine which link, if any, goes in the title */
     if (articleFullBody == "") {
-      titleLink = "<h4>" + articleTitle + "</h4>";
+      titleLink = "<h3>" + articleTitle + "</h3>";
     } else {
-      titleLink = '<h4><a href="' + fieldSectionLink + '" title="Read the full ' + articleTitle + '">' + articleTitle + '</a></h4>';
+      titleLink = '<h3><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">' + articleTitle + '</a></h3>';
     }
   
     
