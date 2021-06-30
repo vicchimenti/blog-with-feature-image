@@ -45,7 +45,7 @@
       var endingHTML = '</div></div>';
       var openRow = '<div class="row no-gutters">';
       var closeRow = '</div>';
-      var titleLink = '<h3>"' + articleTitle + '"</h3>';
+      var titleLink = '<h3 class="card-title">"' + articleTitle + '"</h3>';
       var openBodyWrapper = '<div class="col-md-8">';
       var closeBodyWrapper = '</div>';
       var openSummaryWrapper = '<div class="articleSummary card-body">';
