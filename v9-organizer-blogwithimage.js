@@ -48,7 +48,7 @@
       var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var imageString = '<img class="hidden visually-hidden" />';
-      var summaryString = '<div class="summary">' + articleSummary + '</div>';
+      var summaryString = '<p>' + articleSummary + '<em class="publishDate">' + publishDate + '</em></p>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
 
 
