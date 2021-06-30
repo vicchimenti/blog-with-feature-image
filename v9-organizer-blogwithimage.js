@@ -31,10 +31,13 @@
 
 
 
-      /* -- Prepare all the things -- */
+      /***
+       *  default initializations
+       * 
+       * */
       var beginningHTML = '<div class="knowledgeBaseItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="knowledgeBaseItem standardContent">';
       var endingHTML = '</div></div>';
-      var titleLink = '';
+      var titleLink = '<h3>"' + articleTitle + '"</h3>';
       var openSumaryWrapper = '<div class="summaryWrapper">';
       var closeSumaryWrapper = '</div>';
       var openFigure = '<figure class="programImageWrapper">';
@@ -43,19 +46,28 @@
       var closeFigCaption = '</figcaption>';
       var imgString = '<img class="hidden visually-hidden" />';
       var summaryString = '<div class="summary">' + articleSummary + '</div>';
+      var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
 
 
 
 
 
-
-      /* check for fulltext content */
-      if (articleFullBody == "") {
-          titleLink = "<h3>" + articleTitle + "</h3>";
-      } else {
+      /***
+       *  check for fulltext content
+       * 
+       * */
+      if (articleFullBody != "") {
           titleLink = '<h3><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">' + articleTitle + '</a></h3>';
       }
 
+
+      /***
+       *  Parse for external link
+       * 
+       * */
+      if (externalLink != "" && externalLinkText != "") {
+          externalLinkString = '<span class="externalLink credits"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank"><em>' + externalLinkText + '</em></a></span>';
+      }
 
 
 
