@@ -40,7 +40,7 @@
        *  default initializations
        * 
        * */
-      var beginningHTML = '<div class="knowledgeBaseItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="knowledgeBaseItem standardContent">';
+      var beginningHTML = '<div class="newsItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
       var openSumaryWrapper = '<div class="summaryWrapper">';
