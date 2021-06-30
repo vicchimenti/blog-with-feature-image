@@ -49,7 +49,7 @@
 
 
 
-      /* determine which link, if any, goes in the title */
+      /* check for fulltext content */
       if (articleFullBody == "") {
           titleLink = "<h3>" + articleTitle + "</h3>";
       } else {
