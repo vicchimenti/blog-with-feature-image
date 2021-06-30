@@ -43,16 +43,17 @@
       var beginningHTML = '<div class="newsItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
-      var openSumaryWrapper = '<div class="summaryWrapper">';
+      var openSumaryWrapper = '<div class="articleSummary">';
       var closeSumaryWrapper = '</div>';
-      var openImageWrapper = '<div class="newsImage">';
+      var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
       var closeImageWrapper = '</div>';
+
 
       // var openFigure = '<figure class="programImageWrapper">';
       // var closeFigure = '</figure>';
       // var openFigCaption = '<figcaption class="programImageCaption">';
       // var closeFigCaption = '</figcaption>';
-      var imgString = '<img class="hidden visually-hidden" />';
+      var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<div class="summary">' + articleSummary + '</div>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
 
@@ -78,6 +79,16 @@
       }
 
 
+      /***
+       *  Parse for image
+       * 
+       * */
+      if (articleImage != "") {
+          openImageWrapper = '<div class="newsImage">';
+          imageString = '<img src="' + articleImage + '" class="articleImage" alt="' + articleImageAlt + '" />';
+      }
+
+
 
       /***
        *  write document once
@@ -85,6 +96,11 @@
        * */
       document.write(beginningHTML);
       document.write(titleLink);
+      document.write(openImageWrapper);
+      document.write(imageString);
+      document.write(closeImageWrapper);
+
+
       document.write(externalLinkString);
 
 
