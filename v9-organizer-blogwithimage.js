@@ -71,7 +71,7 @@
        * 
        * */
       if (externalLink != "" && externalLinkText != "") {
-          externalLinkString = '<span class="externalLink credits"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank"><em>' + externalLinkText + '</em></a></span>';
+          externalLinkString = '<span class="externalLink"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank"><em>' + externalLinkText + '</em></a></span>';
       }
 
 
