@@ -47,12 +47,6 @@
       var closeSumaryWrapper = '</div>';
       var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
       var closeImageWrapper = '</div>';
-
-
-      // var openFigure = '<figure class="programImageWrapper">';
-      // var closeFigure = '</figure>';
-      // var openFigCaption = '<figcaption class="programImageCaption">';
-      // var closeFigCaption = '</figcaption>';
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<div class="summary">' + articleSummary + '</div>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
