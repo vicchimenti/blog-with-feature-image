@@ -6,7 +6,7 @@
    *     This new blog content type is derived from the Career Engagement Blog.
    *
    *     This content type will work in conjunction with the Organizer and each item
-   *     will contain one searchable, article.
+   *     will contain one article.
    *
    *     Document will write once when the page loads
    *
