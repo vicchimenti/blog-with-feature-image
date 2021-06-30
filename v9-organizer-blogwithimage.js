@@ -37,6 +37,12 @@
       var titleLink = '';
       var openSumaryWrapper = '<div class="summaryWrapper">';
       var closeSumaryWrapper = '</div>';
+      var openFigure = '<figure class="programImageWrapper">';
+      var closeFigure = '</figure>';
+      var openFigCaption = '<figcaption class="programImageCaption">';
+      var closeFigCaption = '</figcaption>';
+
+
 
 
 
@@ -54,7 +60,10 @@
       /* -- Write all the things -- */
       document.write(beginningHTML);
       document.write(titleLink);
-      document.write('<div class="summaryWrapper">');
+
+
+
+      // document.write('<div class="summaryWrapper">');
       document.write('<figure class="programImageWrapper"><img src="' + articleImage + '" alt="' + articleImageAlt + '" class="programImage" /><figcaption class="programImageCaption">' + altImage + '</figcaption></figure>');
       document.write('<div class="summary">' + articleSummary + '</div>')
 
