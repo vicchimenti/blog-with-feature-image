@@ -53,7 +53,8 @@
       var openImageWrapper = '<div class="newsImage col-md-4 hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var imageString = '<img class="hidden visually-hidden" />';
-      var summaryString = '<p>' + articleSummary + '<br><em class="publishDate">' + publishDate + '</em></p>';
+      var summaryString = '<p class="card-text">' + articleSummary + '<br><em class="publishDate">' + publishDate + '</em></p>';
+      var dateString = '<p class="card-text">' + articleSummary + '<br><em class="publishDate">' + publishDate + '</em></p>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
       var readMoreString = '<p class="readmore"></p>';
 
@@ -105,6 +106,7 @@
       document.write(openSummaryWrapper);
       document.write(externalLinkString);
       document.write(summaryString);
+      document.write(dateString);
       document.write(readMoreString);
       document.write(closeSummaryWrapper);
       document.write(closeBodyWrapper);
