@@ -14,7 +14,12 @@
    */
 
   try {
-      /* -- Store all the things -- */
+
+
+      /***
+       *  default declarations
+       * 
+       * */
       var name = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='normal' modifiers='striptags,htmlentities' />");
       var articleTitle = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Article Title' output='normal' display_field='value' />");
       var articleSummary = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Summary' output='normal' display_field='value' />");
@@ -71,7 +76,10 @@
 
 
 
-      /* -- Write all the things -- */
+      /***
+       *  write document once
+       * 
+       * */
       document.write(beginningHTML);
       document.write(titleLink);
 
