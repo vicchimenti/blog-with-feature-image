@@ -83,7 +83,7 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="newsImage">';
-          imageString = '<img src="' + articleImage + '" class="articleImage" alt="' + articleImageAlt + '" />';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" alt="' + articleImageAlt + '" />';
       }
 
 
