@@ -65,10 +65,6 @@
 
 
 
-      // document.write('<div class="summaryWrapper">');
-      document.write('<figure class="programImageWrapper"><img src="' + articleImage + '" alt="' + articleImageAlt + '" class="programImage" /><figcaption class="programImageCaption">' + altImage + '</figcaption></figure>');
-      document.write('<div class="summary">' + articleSummary + '</div>')
-
 
 
       if (author != "") {
