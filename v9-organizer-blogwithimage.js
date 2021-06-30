@@ -46,7 +46,7 @@
       var openRow = '<div class="row no-gutters">';
       var closeRow = '</div>';
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
-      var openSummaryWrapper = '<div class="articleSummary">';
+      var openSummaryWrapper = '<div class="articleSummary card-body">';
       var closeSummaryWrapper = '</div>';
       var openImageWrapper = '<div class="newsImage col-md-4 hidden visually-hidden">';
       var closeImageWrapper = '</div>';
