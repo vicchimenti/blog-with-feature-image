@@ -45,10 +45,13 @@
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
       var openSumaryWrapper = '<div class="summaryWrapper">';
       var closeSumaryWrapper = '</div>';
-      var openFigure = '<figure class="programImageWrapper">';
-      var closeFigure = '</figure>';
-      var openFigCaption = '<figcaption class="programImageCaption">';
-      var closeFigCaption = '</figcaption>';
+      var openImageWrapper = '<div class="newsImage">';
+      var closeImageWrapper = '</div>';
+
+      // var openFigure = '<figure class="programImageWrapper">';
+      // var closeFigure = '</figure>';
+      // var openFigCaption = '<figcaption class="programImageCaption">';
+      // var closeFigCaption = '</figcaption>';
       var imgString = '<img class="hidden visually-hidden" />';
       var summaryString = '<div class="summary">' + articleSummary + '</div>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
