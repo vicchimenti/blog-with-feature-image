@@ -101,6 +101,7 @@
       document.write(closeImageWrapper);
       document.write(openSumaryWrapper);
       document.write(externalLinkString);
+      document.write(summaryString);
 
       document.write(closeSumaryWrapper);
 
