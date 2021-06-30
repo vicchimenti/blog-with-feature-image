@@ -51,6 +51,7 @@
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p>' + articleSummary + '<br><em class="publishDate">' + publishDate + '</em></p>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
+      var readMoreString = '<p class="readmore"></p>';
 
 
 
@@ -61,6 +62,7 @@
        * */
       if (articleFullBody != "") {
           titleLink = '<h3><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">' + articleTitle + '</a></h3>';
+          readMoreString = '<p class="readmore"><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">Read More <span class="sr-only sr-only-focusable">about </span>' + articleTitle + '</a></p>';
       }
 
 
@@ -97,6 +99,7 @@
       document.write(openSummaryWrapper);
       document.write(externalLinkString);
       document.write(summaryString);
+      document.write(readMoreString);
       document.write(closeSummaryWrapper);
       document.write(endingHTML);
 
