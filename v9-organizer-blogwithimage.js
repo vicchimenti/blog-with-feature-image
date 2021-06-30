@@ -82,6 +82,8 @@
        * */
       document.write(beginningHTML);
       document.write(titleLink);
+      document.write(externalLinkString);
+
 
 
 
