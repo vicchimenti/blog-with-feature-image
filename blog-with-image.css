@@ -8,3 +8,7 @@
 .newsItemWrapper .externalLink a:hover {
     text-decoration: underline;
 }
+
+.newsItemWrapper .standardContent img.card-img {
+    padding: 0;
+}
