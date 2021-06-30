@@ -13,7 +13,7 @@
     padding: 0;
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 991.99px) {
     .articleSummary.card-body {
         padding-top: 1rem;
     }
