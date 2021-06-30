@@ -13,8 +13,10 @@
    *     @version 4.1
    */
 
-  try {
 
+
+
+  try {
 
       /***
        *  default declarations
@@ -35,7 +37,6 @@
 
 
 
-
       /***
        *  default initializations
        * 
@@ -43,14 +44,13 @@
       var beginningHTML = '<div class="newsItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
-      var openSumaryWrapper = '<div class="articleSummary">';
-      var closeSumaryWrapper = '</div>';
+      var openSummaryWrapper = '<div class="articleSummary">';
+      var closeSummaryWrapper = '</div>';
       var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p>' + articleSummary + '<em class="publishDate">' + publishDate + '</em></p>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
-
 
 
 
@@ -84,6 +84,7 @@
 
 
 
+
       /***
        *  write document once
        * 
@@ -93,40 +94,14 @@
       document.write(openImageWrapper);
       document.write(imageString);
       document.write(closeImageWrapper);
-      document.write(openSumaryWrapper);
+      document.write(openSummaryWrapper);
       document.write(externalLinkString);
       document.write(summaryString);
-
-      document.write(closeSumaryWrapper);
-
-
-
-
-
-      if (author != "") {
-          document.write('<div class="author">');
-          document.write('<div class="articleDetails articleAuthor"><h5>By: </h5><div class="articleAuthor"><h5>' + author + '</h5></div></div>');
-          document.write('</div>');
-      } else {
-          document.write('<div class="author articleDetails articleAuthor" style="display: none";><h5>No Author Provided</h5></div>');
-      }
-
-      if (publishDate != "") {
-          document.write('<div class="publishDate">');
-          document.write('<div class="articleDetails articleDate"><h5>Published: </h5><div class="articleDate"><h5>' + publishDate + '</h5></div></div>');
-          document.write('</div>');
-      } else {
-          document.write('<div class="publishDate articleDetails articleDate" style="display: none";><h5>No Date Provided</h5></div>');
-      }
-
-
-
-
-
-      document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, lastModified));
-      document.write('</div>'); // close summaryWrapper
-
+      document.write(closeSummaryWrapper);
       document.write(endingHTML);
+
+
+
 
   } catch (err) {
       document.write(err.message);
