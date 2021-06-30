@@ -99,10 +99,10 @@
       document.write(openImageWrapper);
       document.write(imageString);
       document.write(closeImageWrapper);
-
-
+      document.write(openSumaryWrapper);
       document.write(externalLinkString);
 
+      document.write(closeSumaryWrapper);
 
 
 
