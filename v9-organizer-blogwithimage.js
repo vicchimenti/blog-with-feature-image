@@ -10,7 +10,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 4.7
+   *     @version 4.8
    */
 
 
