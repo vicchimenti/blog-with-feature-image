@@ -41,6 +41,8 @@
       var closeFigure = '</figure>';
       var openFigCaption = '<figcaption class="programImageCaption">';
       var closeFigCaption = '</figcaption>';
+      var imgString = '<img class="hidden visually-hidden" />';
+      var summaryString = '<div class="summary">' + articleSummary + '</div>';
 
 
 
