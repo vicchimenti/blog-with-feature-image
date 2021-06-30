@@ -41,8 +41,10 @@
        *  default initializations
        * 
        * */
-      var beginningHTML = '<div class="newsItemWrapper" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
+      var beginningHTML = '<div class="newsItemWrapper card" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
+      var openRow = '<div class="row no-gutters">';
+      var closeRow = '</div>';
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
       var openSummaryWrapper = '<div class="articleSummary">';
       var closeSummaryWrapper = '</div>';
@@ -93,6 +95,7 @@
        * */
       document.write(beginningHTML);
       document.write(titleLink);
+      document.write(openRow);
       document.write(openImageWrapper);
       document.write(imageString);
       document.write(closeImageWrapper);
@@ -101,6 +104,7 @@
       document.write(summaryString);
       document.write(readMoreString);
       document.write(closeSummaryWrapper);
+      document.write(closeRow);
       document.write(endingHTML);
 
 
