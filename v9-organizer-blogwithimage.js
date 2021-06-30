@@ -48,7 +48,7 @@
       var titleLink = '<h3>"' + articleTitle + '"</h3>';
       var openSummaryWrapper = '<div class="articleSummary">';
       var closeSummaryWrapper = '</div>';
-      var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
+      var openImageWrapper = '<div class="newsImage col-md-4 hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p>' + articleSummary + '<br><em class="publishDate">' + publishDate + '</em></p>';
@@ -82,7 +82,7 @@
        * 
        * */
       if (articleImage != "") {
-          openImageWrapper = '<div class="newsImage">';
+          openImageWrapper = '<div class="newsImage col-md-4">';
           imageString = '<img src="' + articleImage + '" class="articleImage card-img" alt="' + articleImageAlt + '" />';
       }
 
