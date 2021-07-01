@@ -5,6 +5,7 @@
 
 #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
     font-size: 4rem;
+    hyphens: none;
     margin: 0 0 2rem 0;
     padding: 0;
 }
