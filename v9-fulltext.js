@@ -38,7 +38,7 @@
        *  default initializations
        * 
        * */
-      var beginningHTML = '<div class="newsItemWrapper card border-0" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
+      var beginningHTML = '<div class="newsArticleWrapper contentItem card border-0" id="id' + contentID + '" aria-label="' + articleTitle + '" data-position-default="ZoneA" data-position-selected="ZoneA"><div class="article standardContent">';
       var endingHTML = '</div></div>';
       var titleLink = '<div class="card-header border-0"><h1 id="pageTitle">"' + articleTitle + '"</h1></div>';
       var openBodyWrapper = '<div class="articleBody card-body border-0">';
@@ -49,7 +49,7 @@
       var articleAuthorString = '<p class="card-text articleAuthor credits hidden visually-hidden">No Author Provided</p>';
       var articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits hidden visually-hidden">No Photographer Provided</p>';
       var imageString = '<img class="hidden visually-hidden" />';
-      var summaryString = '<p class="card-text">' + articleSummary + '</p>';
+      //   var summaryString = '<p class="card-text">' + articleSummary + '</p>';
       var dateString = '<p class="card-text"><em class="publishDate text-muted">' + publishDate + '</em></p>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
 
