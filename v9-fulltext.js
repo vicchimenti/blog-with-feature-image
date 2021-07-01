@@ -43,7 +43,7 @@
       var endingHTML = '</div></div>';
       //   var openRow = '<div class="row no-gutters">';
       //   var closeRow = '</div>';
-      var titleLink = '<h3 class="card-title">"' + articleTitle + '"</h3>';
+      var titleLink = '<div class="card-header"><h3 class="card-title">"' + articleTitle + '"</h3></div>';
       //   var openBodyWrapper = '<div class="col-md-8">';
       //   var closeBodyWrapper = '</div>';
       var openSummaryWrapper = '<div class="articleSummary card-body">';
@@ -63,10 +63,10 @@
        *  check for fulltext content
        * 
        * */
-      if (articleFullBody != "") {
-          titleLink = '<h3><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">' + articleTitle + '</a></h3>';
-          readMoreString = '<p class="readmore"><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">Read More <span class="sr-only sr-only-focusable">about ' + articleTitle + '</span></a></p>';
-      }
+      //   if (articleFullBody != "") {
+      //       titleLink = '<h3><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">' + articleTitle + '</a></h3>';
+      //       readMoreString = '<p class="readmore"><a href="' + fullTextLink + '" title="Read the full post ' + articleTitle + '">Read More <span class="sr-only sr-only-focusable">about ' + articleTitle + '</span></a></p>';
+      //   }
 
 
       /***
