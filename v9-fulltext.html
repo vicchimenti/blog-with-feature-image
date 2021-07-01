@@ -93,6 +93,12 @@
             format="<div class=&quot;newsPhotography&quot;>Photography by $value</div>" />
 
         <t4 type="content"
+            name="External Link"
+            output="selective-output"
+            modifiers="striptags,htmlentities"
+            format="<h3>$value</h3>" />
+
+        <t4 type="content"
             name="Publish Date"
             output="selective-output"
             process-format="true"
