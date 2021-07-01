@@ -1,1 +1,20 @@
-#088099
+.newsArticleWrapper .card-header #pageTitle {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.newsArticleWrapper .standardContent .card-body p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.newsArticleWrapper .standardContent .card-body p.externalLink a {
+    color: #088099;
+    margin: 1rem 0;
+    text-decoration: none;
+}
+
+.newsArticleWrapper .standardContent .card-body p.externalLink a:hover {
+    text-decoration: underline;
+}
