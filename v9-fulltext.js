@@ -49,7 +49,7 @@
       var articleAuthorString = '<p class="card-text articleAuthor credits hidden visually-hidden">No Author Provided</p>';
       var articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits hidden visually-hidden">No Photographer Provided</p>';
       var imageString = '<img class="hidden visually-hidden" />';
-      var dateString = '<p class="publishDate card-text"><strong>' + publishDate + '</strong></p>';
+      var dateString = '<p class="publishDate card-text"><small>' + publishDate + '</small></p>';
       var externalLinkString = '<p class="externalLink hidden">No Proper Link Provided</p>';
 
 
