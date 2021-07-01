@@ -5,7 +5,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 5.3
+   *     @version 5.4
    */
 
 
@@ -103,7 +103,7 @@
        * 
        * */
       if (articlePhotoCredit != "") {
-          articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits">Photography by' + articlePhotoCredit + '</p>';
+          articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits">Photography by ' + articlePhotoCredit + '</p>';
       }
 
 
