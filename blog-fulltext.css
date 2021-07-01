@@ -27,6 +27,7 @@
 
 .newsArticleWrapper .standardContent .card-body p.externalLink a {
     color: #088099;
+    font-weight: 500;
     text-decoration: none;
 }
 
