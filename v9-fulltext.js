@@ -53,7 +53,7 @@
       var summaryString = '<p class="card-text">' + articleSummary + '</p>';
       var dateString = '<p class="card-text"><em class="publishDate text-muted">' + publishDate + '</em></p>';
       var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
-      var readMoreString = '<p class="readmore"></p>';
+      //   var readMoreString = '<p class="readmore"></p>';
 
 
 
