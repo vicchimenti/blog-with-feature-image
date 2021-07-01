@@ -41,14 +41,14 @@
        * */
       var beginningHTML = '<div class="newsItemWrapper card" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
-      var openRow = '<div class="row no-gutters">';
-      var closeRow = '</div>';
+      //   var openRow = '<div class="row no-gutters">';
+      //   var closeRow = '</div>';
       var titleLink = '<h3 class="card-title">"' + articleTitle + '"</h3>';
-      var openBodyWrapper = '<div class="col-md-8">';
-      var closeBodyWrapper = '</div>';
+      //   var openBodyWrapper = '<div class="col-md-8">';
+      //   var closeBodyWrapper = '</div>';
       var openSummaryWrapper = '<div class="articleSummary card-body">';
       var closeSummaryWrapper = '</div>';
-      var openImageWrapper = '<div class="newsImage col-md-4 hidden visually-hidden">';
+      var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p class="card-text">' + articleSummary + '</p>';
@@ -97,19 +97,19 @@
       document.write(beginningHTML);
       document.write(anchorTag);
       document.write(titleLink);
-      document.write(openRow);
+      //   document.write(openRow);
       document.write(openImageWrapper);
       document.write(imageString);
       document.write(closeImageWrapper);
-      document.write(openBodyWrapper);
+      //   document.write(openBodyWrapper);
       document.write(openSummaryWrapper);
       document.write(externalLinkString);
       document.write(summaryString);
       document.write(dateString);
       document.write(readMoreString);
       document.write(closeSummaryWrapper);
-      document.write(closeBodyWrapper);
-      document.write(closeRow);
+      //   document.write(closeBodyWrapper);
+      //   document.write(closeRow);
       document.write(endingHTML);
 
 
