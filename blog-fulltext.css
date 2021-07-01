@@ -17,12 +17,8 @@
     font-weight: 500;
 }
 
-.newsArticleWrapper .standardContent .card-body p.externalLink {
-    margin-top: 1rem;
-}
-
-.newsArticleWrapper .standardContent .card-body p.publishDate {
-    margin-bottom: 1rem;
+.newsArticleWrapper .standardContent .card-body .publishDetails {
+    margin: 1rem 0;
 }
 
 .newsArticleWrapper .standardContent .card-body p.externalLink a {
