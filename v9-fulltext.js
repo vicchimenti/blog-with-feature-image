@@ -1,16 +1,11 @@
   /***
    *     @author Victor Chimenti, MSCS-SE '20
-   *     @file v9-organizer-blogwithimage.js
-   *     v9/organizer/blogwithimage
-   *
-   *     This new blog content type is derived from the Career Engagement Blog.
-   *
-   *     This content type will work in conjunction with the Organizer and each item
-   *     will contain one article.
+   *     @file v9-fulltext.js
+   *     v9/fulltext
    *
    *     Document will write once when the page loads
    *
-   *     @version 4.9
+   *     @version 5.1
    */
 
 
