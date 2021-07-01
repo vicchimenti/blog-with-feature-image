@@ -91,8 +91,8 @@
       document.write(closeImageWrapper);
       document.write(openSummaryWrapper);
       document.write(externalLinkString);
-      document.write(summaryString);
       document.write(dateString);
+      document.write(articleFullBody);
       document.write(closeSummaryWrapper);
       document.write(endingHTML);
 
