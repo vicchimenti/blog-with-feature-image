@@ -48,7 +48,7 @@
       //   var closeBodyWrapper = '</div>';
       var openSummaryWrapper = '<div class="articleSummary card-body">';
       var closeSummaryWrapper = '</div>';
-      var openImageWrapper = '<div class="newsImage hidden visually-hidden">';
+      var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p class="card-text">' + articleSummary + '</p>';
@@ -83,7 +83,7 @@
        * 
        * */
       if (articleImage != "") {
-          openImageWrapper = '<div class="col-md-4">';
+          openImageWrapper = '<div class="imageWrapper">';
           imageString = '<img src="' + articleImage + '" class="articleImage card-img" alt="' + articleImageAlt + '" />';
       }
 
