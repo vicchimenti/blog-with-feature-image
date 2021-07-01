@@ -36,9 +36,8 @@
     text-decoration: underline;
 }
 
-
-/* @media screen and (max-width: 767.999px) {
+@media screen and (max-width: 767.999px) {
     #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
-        padding: 1rem 0 0 0;
+        font-size: 2rem;
     }
-} */
+}
