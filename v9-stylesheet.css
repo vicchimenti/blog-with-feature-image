@@ -3681,9 +3681,61 @@ a.BlackArrowCircle:focus {
 /* ========================================================================================== 
    ===== Blog with Image ===== Content Type #5557 ================================================== 
    ==========================================================================================
-   Long form text with fulltext layouts
-   Last revised 7/1/2021 by Victor 
+   Hybrid design from News, Blog and Knowledge Base content types utilizing Bootstrap Card
+   Optional Image, external link and credits
+   Last revised 7/1/2021 by Victor
 */
+
+
+/* ---------- Blog Posts in Fulltext #zoneA---------------- */
+
+.newsArticleWrapper.card {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
+    font-size: 4rem;
+    hyphens: none;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.newsArticleWrapper .standardContent .card-body h2.articleCaption {
+    margin: 2rem 0;
+}
+
+.newsArticleWrapper .standardContent .card-body p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.newsArticleWrapper .standardContent .card-body p.credits {
+    font-weight: 500;
+}
+
+.newsArticleWrapper .standardContent .card-body .publishDetails {
+    margin: 1rem 0;
+}
+
+.newsArticleWrapper .standardContent .card-body p.externalLink a {
+    color: #088099;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.newsArticleWrapper .standardContent .card-body p.externalLink a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767.999px) {
+    #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
+        font-size: 2rem;
+    }
+    .newsArticleWrapper .standardContent .card-body h2.articleCaption {
+        font-size: 1.75rem;
+    }
+}
 
 
 /* ==========================================================================================
