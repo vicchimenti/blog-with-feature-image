@@ -5,7 +5,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 5.7
+   *     @version 5.8
    */
 
 
@@ -124,8 +124,10 @@
       document.write(openBodyWrapper);
       document.write(articleCaptionString);
       document.write(articleAuthorString);
+      document.write(openPublishWrapper);
       document.write(articlePhotoCreditString);
       document.write(externalLinkString);
+      document.write(closePublishWrapper);
       document.write(dateString);
       document.write(articleFullBody);
       document.write(closeBodyWrapper);
