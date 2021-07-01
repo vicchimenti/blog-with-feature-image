@@ -41,11 +41,12 @@
        * */
       var beginningHTML = '<div class="newsItemWrapper card" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
-      var titleLink = '<div class="card-header"><h3 class="card-title">"' + articleTitle + '"</h3></div>';
+      var titleLink = '<div class="card-header"><h3>"' + articleTitle + '"</h3></div>';
       var openSummaryWrapper = '<div class="articleSummary card-body">';
       var closeSummaryWrapper = '</div>';
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
+      var articleCaptionString = '';
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p class="card-text">' + articleSummary + '</p>';
       var dateString = '<p class="card-text"><em class="publishDate text-muted">' + publishDate + '</em></p>';
@@ -69,6 +70,17 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="imageWrapper">';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" alt="' + articleImageAlt + '" />';
+      }
+
+
+
+
+      /***
+       *  Parse for caption
+       * 
+       * */
+      if (articleCaption != "") {
           imageString = '<img src="' + articleImage + '" class="articleImage card-img" alt="' + articleImageAlt + '" />';
       }
 
