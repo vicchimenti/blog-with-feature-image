@@ -46,7 +46,11 @@
       var closeSummaryWrapper = '</div>';
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
-      var articleCaptionString = '';
+      var articleCaptionString = '<h2 class="card-title hidden visually-hidden">No Caption Provided</h2>';
+      var articleAuthorString = '<p class="card-text articleAuthorhidden visually-hidden">No Author Provided</p>';
+      var articlePhotoCreditString = '<p class="card-text articlePhotoCredit hidden visually-hidden">No Photographer Provided</p>';
+
+
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p class="card-text">' + articleSummary + '</p>';
       var dateString = '<p class="card-text"><em class="publishDate text-muted">' + publishDate + '</em></p>';
@@ -81,7 +85,29 @@
        * 
        * */
       if (articleCaption != "") {
-          imageString = '<img src="' + articleImage + '" class="articleImage card-img" alt="' + articleImageAlt + '" />';
+          articleCaptionString = '<h2 class="card-title">' + articleCaption + '</h2>';
+      }
+
+
+
+
+      /***
+       *  Parse for author
+       * 
+       * */
+      if (articleAuthor != "") {
+          articleAuthorString = '<p class="card-text articleAuthorhidden visually-hidden">No Author Provided</p>';
+      }
+
+
+
+
+      /***
+       *  Parse for photo credit
+       * 
+       * */
+      if (articlePhotoCredit != "") {
+          articlePhotoCreditString = '<p class="card-text articlePhotoCredit hidden visually-hidden">No Photographer Provided</p>';
       }
 
 
@@ -98,6 +124,7 @@
       document.write(imageString);
       document.write(closeImageWrapper);
       document.write(openSummaryWrapper);
+      document.write(articleCaptionString);
       document.write(externalLinkString);
       document.write(dateString);
       document.write(articleFullBody);
