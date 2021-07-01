@@ -41,7 +41,7 @@
        * */
       var beginningHTML = '<div class="newsItemWrapper card" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
-      var titleLink = '<div class="card-header"><h3>"' + articleTitle + '"</h3></div>';
+      var titleLink = '<div class="card-header"><h1 id="pageTitle">"' + articleTitle + '"</h1></div>';
       var openSummaryWrapper = '<div class="articleSummary card-body">';
       var closeSummaryWrapper = '</div>';
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
