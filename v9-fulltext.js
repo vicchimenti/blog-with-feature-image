@@ -5,7 +5,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 5.4
+   *     @version 5.6
    */
 
 
@@ -60,7 +60,7 @@
        * 
        * */
       if (externalLink != "" && externalLinkText != "") {
-          externalLinkString = '<p class="externalLink"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank"><em>' + externalLinkText + '</em></a></p>';
+          externalLinkString = '<p class="externalLink"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank" class="card-link"><em>' + externalLinkText + '</em></a></p>';
       }
 
 
