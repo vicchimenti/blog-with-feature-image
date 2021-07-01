@@ -124,11 +124,11 @@
       document.write(openBodyWrapper);
       document.write(articleCaptionString);
       document.write(articleAuthorString);
-      document.write(openPublishWrapper);
       document.write(articlePhotoCreditString);
+      document.write(openPublishWrapper);
       document.write(externalLinkString);
-      document.write(closePublishWrapper);
       document.write(dateString);
+      document.write(closePublishWrapper);
       document.write(articleFullBody);
       document.write(closeBodyWrapper);
       document.write(endingHTML);
