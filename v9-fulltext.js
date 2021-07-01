@@ -5,7 +5,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 5.1
+   *     @version 5.2
    */
 
 
@@ -49,8 +49,6 @@
       var articleCaptionString = '<h2 class="card-title hidden visually-hidden">No Caption Provided</h2>';
       var articleAuthorString = '<p class="card-text articleAuthor credits hidden visually-hidden">No Author Provided</p>';
       var articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits hidden visually-hidden">No Photographer Provided</p>';
-
-
       var imageString = '<img class="hidden visually-hidden" />';
       var summaryString = '<p class="card-text">' + articleSummary + '</p>';
       var dateString = '<p class="card-text"><em class="publishDate text-muted">' + publishDate + '</em></p>';
