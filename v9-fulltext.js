@@ -50,7 +50,7 @@
       var articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits hidden visually-hidden">No Photographer Provided</p>';
       var imageString = '<img class="hidden visually-hidden" />';
       var dateString = '<p class="card-text"><em class="publishDate text-muted">' + publishDate + '</em></p>';
-      var externalLinkString = '<span class="externalLink hidden">No Proper Link Provided</span>';
+      var externalLinkString = '<p class="externalLink hidden">No Proper Link Provided</p>';
 
 
 
@@ -60,7 +60,7 @@
        * 
        * */
       if (externalLink != "" && externalLinkText != "") {
-          externalLinkString = '<span class="externalLink"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank"><em>' + externalLinkText + '</em></a></span>';
+          externalLinkString = '<p class="externalLink"><a href="' + externalLink + '" title="' + externalLinkText + '" target="_blank"><em>' + externalLinkText + '</em></a></p>';
       }
 
 
@@ -92,7 +92,7 @@
        * 
        * */
       if (articleAuthor != "") {
-          articleAuthorString = '<p class="card-text articleAuthor credits">' + articleAuthor + '</p>';
+          articleAuthorString = '<p class="card-text articleAuthor credits">By ' + articleAuthor + '</p>';
       }
 
 
@@ -103,7 +103,7 @@
        * 
        * */
       if (articlePhotoCredit != "") {
-          articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits">' + articlePhotoCredit + '</p>';
+          articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits">Photography by' + articlePhotoCredit + '</p>';
       }
 
 
