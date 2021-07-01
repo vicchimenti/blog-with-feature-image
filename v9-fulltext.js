@@ -97,19 +97,15 @@
       document.write(beginningHTML);
       document.write(anchorTag);
       document.write(titleLink);
-      //   document.write(openRow);
       document.write(openImageWrapper);
       document.write(imageString);
       document.write(closeImageWrapper);
-      //   document.write(openBodyWrapper);
       document.write(openSummaryWrapper);
       document.write(externalLinkString);
       document.write(summaryString);
       document.write(dateString);
-      document.write(readMoreString);
+      //   document.write(readMoreString);
       document.write(closeSummaryWrapper);
-      //   document.write(closeBodyWrapper);
-      //   document.write(closeRow);
       document.write(endingHTML);
 
 
