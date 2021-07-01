@@ -45,6 +45,8 @@
       var closeBodyWrapper = '</div>';
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
+      var openPublishWrapper = '<div class="publishDetails">';
+      var closePublishWrapper = '</div>';
       var articleCaptionString = '<h2 class="card-title hidden visually-hidden">No Caption Provided</h2>';
       var articleAuthorString = '<p class="card-text articleAuthor credits hidden visually-hidden">No Author Provided</p>';
       var articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits hidden visually-hidden">No Photographer Provided</p>';
