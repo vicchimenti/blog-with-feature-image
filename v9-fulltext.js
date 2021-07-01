@@ -47,8 +47,8 @@
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var articleCaptionString = '<h2 class="card-title hidden visually-hidden">No Caption Provided</h2>';
-      var articleAuthorString = '<p class="card-text articleAuthorhidden visually-hidden">No Author Provided</p>';
-      var articlePhotoCreditString = '<p class="card-text articlePhotoCredit hidden visually-hidden">No Photographer Provided</p>';
+      var articleAuthorString = '<p class="card-text articleAuthor credits hidden visually-hidden">No Author Provided</p>';
+      var articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits hidden visually-hidden">No Photographer Provided</p>';
 
 
       var imageString = '<img class="hidden visually-hidden" />';
@@ -96,7 +96,7 @@
        * 
        * */
       if (articleAuthor != "") {
-          articleAuthorString = '<p class="card-text articleAuthorhidden visually-hidden">No Author Provided</p>';
+          articleAuthorString = '<p class="card-text articleAuthor credits">' + articleAuthor + '</p>';
       }
 
 
@@ -107,7 +107,7 @@
        * 
        * */
       if (articlePhotoCredit != "") {
-          articlePhotoCreditString = '<p class="card-text articlePhotoCredit hidden visually-hidden">No Photographer Provided</p>';
+          articlePhotoCreditString = '<p class="card-text articlePhotoCredit credits">' + articlePhotoCredit + '</p>';
       }
 
 
