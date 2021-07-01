@@ -39,10 +39,10 @@
        *  default initializations
        * 
        * */
-      var beginningHTML = '<div class="newsItemWrapper card" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
+      var beginningHTML = '<div class="newsItemWrapper card border-0" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
-      var titleLink = '<div class="card-header"><h1 id="pageTitle">"' + articleTitle + '"</h1></div>';
-      var openSummaryWrapper = '<div class="articleSummary card-body">';
+      var titleLink = '<div class="card-header border-0"><h1 id="pageTitle">"' + articleTitle + '"</h1></div>';
+      var openSummaryWrapper = '<div class="articleSummary card-body border-0">';
       var closeSummaryWrapper = '</div>';
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
