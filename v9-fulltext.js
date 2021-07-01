@@ -42,8 +42,8 @@
       var beginningHTML = '<div class="newsItemWrapper card border-0" id="id' + contentID + '" aria-label="' + articleTitle + '"><div class="newsItem standardContent">';
       var endingHTML = '</div></div>';
       var titleLink = '<div class="card-header border-0"><h1 id="pageTitle">"' + articleTitle + '"</h1></div>';
-      var openSummaryWrapper = '<div class="articleSummary card-body border-0">';
-      var closeSummaryWrapper = '</div>';
+      var openBodyWrapper = '<div class="articleBody card-body border-0">';
+      var closeBodyWrapper = '</div>';
       var openImageWrapper = '<div class="imageWrapper hidden visually-hidden">';
       var closeImageWrapper = '</div>';
       var articleCaptionString = '<h2 class="card-title hidden visually-hidden">No Caption Provided</h2>';
@@ -123,12 +123,14 @@
       document.write(openImageWrapper);
       document.write(imageString);
       document.write(closeImageWrapper);
-      document.write(openSummaryWrapper);
+      document.write(openBodyWrapper);
       document.write(articleCaptionString);
+      document.write(articleAuthorString);
+      document.write(articlePhotoCreditString);
       document.write(externalLinkString);
       document.write(dateString);
       document.write(articleFullBody);
-      document.write(closeSummaryWrapper);
+      document.write(closeBodyWrapper);
       document.write(endingHTML);
 
 
