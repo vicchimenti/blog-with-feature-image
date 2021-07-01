@@ -1,3 +1,8 @@
+.newsArticleWrapper.card {
+    margin: 1rem;
+    padding: 1rem;
+}
+
 #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
     font-size: 4rem;
     margin: 0 0 2rem 0;
@@ -31,8 +36,9 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 767.999px) {
+
+/* @media screen and (max-width: 767.999px) {
     #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
-        padding: 2rem 0 0 0;
+        padding: 1rem 0 0 0;
     }
-}
+} */
