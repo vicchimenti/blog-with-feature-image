@@ -1,7 +1,11 @@
-.newsArticleWrapper .card-header #pageTitle {
+.newsArticleWrapper .card-header h1#pageTitle {
     font-size: 4rem;
-    margin: 0;
+    margin: 0 0 2rem 0;
     padding: 0;
+}
+
+.newsArticleWrapper .standardContent .card-body h2.articleCaption {
+    margin: 2rem 0;
 }
 
 .newsArticleWrapper .standardContent .card-body p {
@@ -9,9 +13,16 @@
     margin: 0;
 }
 
+.newsArticleWrapper .standardContent .card-body p.externalLink {
+    margin-top: 1rem;
+}
+
+.newsArticleWrapper .standardContent .card-body p.publishDate {
+    margin-bottom: 1rem;
+}
+
 .newsArticleWrapper .standardContent .card-body p.externalLink a {
     color: #088099;
-    margin: 1rem 0;
     text-decoration: none;
 }
 
