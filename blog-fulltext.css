@@ -1,4 +1,4 @@
-.newsArticleWrapper .card-header h1#pageTitle {
+#pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
     font-size: 4rem;
     margin: 0 0 2rem 0;
     padding: 0;
@@ -11,6 +11,10 @@
 .newsArticleWrapper .standardContent .card-body p {
     line-height: 1.5;
     margin: 0;
+}
+
+.newsArticleWrapper .standardContent .card-body p.credits {
+    font-weight: 500;
 }
 
 .newsArticleWrapper .standardContent .card-body p.externalLink {
@@ -31,7 +35,7 @@
 }
 
 @media screen and (max-width: 767.999px) {
-    .newsArticleWrapper .card-header h1#pageTitle {
-        padding-top: 2rem;
+    #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
+        padding: 2rem 0 0 0;
     }
 }
