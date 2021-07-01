@@ -40,4 +40,7 @@
     #pageContentWrapper .newsArticleWrapper .card-header h1#pageTitle {
         font-size: 2rem;
     }
+    .newsArticleWrapper .standardContent .card-body h2.articleCaption {
+        font-size: 1.75rem;
+    }
 }
