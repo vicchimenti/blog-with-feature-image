@@ -3,8 +3,6 @@
    *     @file v9-organizer-blogwithimage.js
    *     v9/organizer/blogwithimage
    *
-   *     This new blog content type is derived from the Career Engagement Blog.
-   *
    *     This content type will work in conjunction with the Organizer and each item
    *     will contain one article.
    *
