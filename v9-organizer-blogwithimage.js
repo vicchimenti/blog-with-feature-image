@@ -10,7 +10,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 4.92
+   *     @version 4.93
    */
 
 
@@ -97,7 +97,7 @@
        * 
        * */
       document.write(beginningHTML);
-      document.write(titleLink);
+      document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, titleLink));
       document.write(openRow);
       document.write(openImageWrapper);
       document.write(imageString);
