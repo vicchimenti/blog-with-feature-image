@@ -40,7 +40,8 @@
       var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Article Title' modifiers='striptags,htmlentities' />");
       var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
 
-    //   var imageID = content.get('Image').getID();
+      var imageID = content.get('Image').getID();
+      var imageName = content.get('Image').getName();
     //   imageInfo.setInput(imageID) 
     //   imageInfo.check();
     //   var imageHeight = imageInfo.getHeight();
@@ -98,7 +99,7 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="col-md-4">';
-          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + articleImageTitle + '" alt="' + articleImageTitle + '" />';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + imageID + '" alt="' + imageName + '" />';
       }
 
 
