@@ -8,7 +8,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 4.98
+   *     @version 4.99
    */
 
 
@@ -27,7 +27,10 @@
        *  default declarations
        * 
        * */
-      var name = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='normal' modifiers='striptags,htmlentities' />");
+
+       var contentName = content.get("Name");
+
+    //   var name = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='normal' modifiers='striptags,htmlentities' />");
       var articleTitle = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Article Title' output='normal' display_field='value' />");
       var articleSummary = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Summary' output='normal' display_field='value' />");
       var publishDate = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Publish Date' output='normal' date_format='MMMM d, yyyy' />");
@@ -41,7 +44,7 @@
       var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
 
       var imageID = content.get('Image').getID();
-      var imageName = content.get('Image').getName();
+    //   var imageName = content.get('Image').getName();
     //   imageInfo.setInput(imageID) 
     //   imageInfo.check();
     //   var imageHeight = content.get('Image').getHeight();
@@ -99,7 +102,7 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="col-md-4">';
-          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + articleTitle + '" alt="' + articleTitle + '" />';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" id="mediaID' + imageID + '" title="' + articleTitle + '" alt="' + contentName + '" />';
       }
 
 
