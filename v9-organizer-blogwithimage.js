@@ -8,9 +8,8 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 4.94
+   *     @version 4.95
    */
-
 
 
 
@@ -25,27 +24,15 @@
       var articleSummary = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Summary' output='normal' display_field='value' />");
       var publishDate = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Publish Date' output='normal' date_format='MMMM d, yyyy' />");
       var articleImage = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Image' output='normal' formatter='path/*' />");
-      var articleImageAlt = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='media' name='Image' attribute='description' />");
-      var articleImageTitle = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='media' name='Image' attribute='name' />");
+      var articleImageAlt = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='media' name='Image' attribute='Description' />");
+      var articleImageTitle = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='media' name='Image' attribute='Name' />");
       var externalLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='External Link' output='normal' modifiers='striptags,htmlentities' />");
       var externalLinkText = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='External Link Text' output='normal' modifiers='striptags,htmlentities' />");
       var articleFullBody = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Article Body' output='normal' display_field='value' />");
       var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Article Title' modifiers='striptags,htmlentities' />");
       var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
 
-    // <img    class="t4-tag-content-item mceNonEditable" 
-    //         src="https://cms.seattleu.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=0b7550b43a49b0db79741b3e53e6f1d08da0f740"
-    //         alt="Students and Parents Moving in to Student Housing"
-    //         data-t4-instance-id="151"
-    //         data-t4-media-id="2395433"
-    //         data-t4-markup-for="2395433"
-    //         data-t4-media-attributes="{&quot;attributes&quot;:{}}"
-    //         data-t4-media-formatter="image/*"
-    //         data-t4-media-language="en"
-    //         data-t4-type="media" />
 
-{/* <t4 type="media" attribute="Name" editable="true" />
-<t4 type="content" name="Description" output="normal" modifiers="striptags,htmlentities" /> */}
       /***
        *  default initializations
        * 
