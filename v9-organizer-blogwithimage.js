@@ -33,9 +33,19 @@
       var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Article Title' modifiers='striptags,htmlentities' />");
       var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
 
+    // <img    class="t4-tag-content-item mceNonEditable" 
+    //         src="https://cms.seattleu.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=0b7550b43a49b0db79741b3e53e6f1d08da0f740"
+    //         alt="Students and Parents Moving in to Student Housing"
+    //         data-t4-instance-id="151"
+    //         data-t4-media-id="2395433"
+    //         data-t4-markup-for="2395433"
+    //         data-t4-media-attributes="{&quot;attributes&quot;:{}}"
+    //         data-t4-media-formatter="image/*"
+    //         data-t4-media-language="en"
+    //         data-t4-type="media" />
 
-
-
+{/* <t4 type="media" attribute="Name" editable="true" />
+<t4 type="content" name="Description" output="normal" modifiers="striptags,htmlentities" /> */}
       /***
        *  default initializations
        * 
