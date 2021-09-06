@@ -44,7 +44,7 @@
       var imageName = content.get('Image').getName();
     //   imageInfo.setInput(imageID) 
     //   imageInfo.check();
-    //   var imageHeight = imageInfo.getHeight();
+      var imageHeight = content.get('Image').getHeight();
     //   var imageWidth = imageInfo.getWidth();
 
     // height="' + imageHeight + '" width="' + imageWidth + '" 
@@ -99,7 +99,7 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="col-md-4">';
-          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + imageID + '" alt="' + imageName + '" />';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" height="' + imageHeight + '" title="' + imageID + '" alt="' + imageName + '" />';
       }
 
 
