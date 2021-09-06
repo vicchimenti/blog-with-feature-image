@@ -12,6 +12,10 @@
    */
 
 
+
+   importClass(com.terminalfour.media.Media);
+   importClass(com.terminalfour.media.utils.ImageInfo);
+
    
   try {
 
