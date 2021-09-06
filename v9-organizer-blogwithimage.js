@@ -8,7 +8,7 @@
    *
    *     Document will write once when the page loads
    *
-   *     @version 4.95
+   *     @version 4.97
    */
 
 
@@ -18,6 +18,12 @@
 
    
   try {
+
+    var imageInfo = new ImageInfo; // Initializes ImageInfo object
+    var mediaInfo = new Media; // Initializes ImageInfo object
+
+
+
 
       /***
        *  default declarations
@@ -36,7 +42,13 @@
       var fullTextLink = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Article Title' modifiers='striptags,htmlentities' />");
       var contentID = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='meta' meta='content_id' />");
 
+      var imageID = content.get('Image').getID();
+      imageInfo.setInput(imageID) // Loads image in ImageInfo class
+      imageInfo.check();
+      var imageHeight = imageInfo.getHeight();
+      var imageWidth = imageInfo.getWidth();
 
+      
       /***
        *  default initializations
        * 
@@ -86,7 +98,7 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="col-md-4">';
-          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + articleImageTitle + '" alt="' + articleImageAlt + '" />';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + articleImageTitle + '" alt="' + articleImageTitle + '" height="' + imageHeight + '" width="' + imageWidth + '" />';
       }
 
 
