@@ -46,6 +46,8 @@
     //   var imageHeight = imageInfo.getHeight();
     //   var imageWidth = imageInfo.getWidth();
 
+    // height="' + imageHeight + '" width="' + imageWidth + '" 
+
       
       /***
        *  default initializations
@@ -96,7 +98,7 @@
        * */
       if (articleImage != "") {
           openImageWrapper = '<div class="col-md-4">';
-          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + articleImageTitle + '" alt="' + articleImageTitle + '" height="' + imageHeight + '" width="' + imageWidth + '" />';
+          imageString = '<img src="' + articleImage + '" class="articleImage card-img" title="' + articleImageTitle + '" alt="' + articleImageTitle + '" />';
       }
 
 
