@@ -20,7 +20,6 @@
   try {
 
     var imageInfo = new ImageInfo; // Initializes ImageInfo object
-    var mediaInfo = new Media; // Initializes ImageInfo object
 
 
 
